@@ -25,7 +25,7 @@ All needed source files should be included in this repositiory. Main file to sta
 
 This is a Polish game. I was creating it when I was young and learning to code, so this code is not top quality. Almost all variable and type names are Polish, so it could be hard to understand for foreigners. You'll see also there is a big mess in the code, ugly formatting etc. Sorry, it was my fault. You may believe me, but today I do code reviews to other programmers at work and I don't allow anyone to type like this what is here! BUT! All of this shows how a man learns and develop his skills.
 
-The code now is mostly automatically formatted to be more readable. The original code can be found in previous versions of the files but it's rather not important.
+The code will be mostly automatically formatted to be more readable. For now, it is completely the same as it was more than 20 years ago.
 
 # The purpose of this repositiory
 
