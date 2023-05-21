@@ -1,0 +1,122 @@
+              _______ ________ __   __ _______  _______  _______
+             |   ____|__    __|  | |  |   _   \|__   __|/   _   \
+             |____   |  |  |  |  |_|  |  |_)   )__| |__(   (_)   )
+             |_______|  |__|   \_____/|_______/|_______|\_______/
+       _____ _____ _____ _____ _____ _____ _____ _____ _____ _ _ _ _____
+      |  |  |     |     |  _  |  |  |_   _|  ___|  _  |     | | | |  ___|
+      |    -|  |  | | | |   __|  |  | | | |  ___|    -|  |  | | | |  ___|
+      |__|__|_____|_|_|_|__|  |_____| |_| |_____|__|__|_____|_____|_____|
+                           ______  _______ _______
+   --------------------   |   ___||   _   |   _   \   ----------------------
+--| https://gadz.pl/   |--|  |_---|   _   |  |_)   )-|        GADZ.PL       |-
+   --------------------   |____   |__| |  |_______/   ----------------------
+                               |__|    |__|
+                           (Studio Komputerowe GAD)
+     ----------------
+----| NAZWA PROGRAMU |
+     ----------------
+
+Sadist II: Ostatni krzyk
+
+     ----------------------
+----| KROTKI OPIS PROGRAMU |
+     ----------------------
+
+Bardzo rozbudowana pod wzgledem ilosci opcji, prosta gierka, polegajaca na 
+zabijaniu na wiele sposobow malych ludzikow, ktore biegaja po dowolnym
+terenie. Skrzyzowanie Lemmings i Worms.
+
+     --------------------
+----| DOKLADNIEJSZY OPIS |
+     --------------------
+
+Hmmm... Jesli widziales(as) juz pierwsza czesc tego programu, wlasciwie
+bezcelowe jest czytanie tego pliku. Sadist II to kontynuacja tamtego prog-
+ramu, zasady pozostaly bardzo podobne - zabijaj wszystkich, rob z nimi co
+chcesz, baw sie dobrze i czuj sie lepiej niz sam bog - to Ty nim jestes!:)
+Program mozna opisac w jednym zdaniu nastepujaco. Po dowolnym terenie cho-
+dzi banda roznych postaci; do Ciebie nalezy decyzja, co z nimi sie stanie.
+Mozesz ich zabijac, mozesz tez bawic sie nimi w inny sposob, wszystko za-
+lezy od Ciebie jednego. Opcji jest mnostwo, wiec i zabawy nie powinno bra-
+kowac. Na pierwszy rzut oka, program kojarzy sie z grami Worms i Lemmings.
+I to prawidlowe skojarzenie, gdyz wlasnie na tych dwoch grach jest wzoro-
+wany Sadist. Jest to jakby ich polaczenie, z domieszka hm... chyba Mortal
+Kombat, bo tyle leje sie krwi [a nawet wiecej:)]. To w zasadzie wszystko. 
+Zanim zaczniesz zabawe, koniecznie przeczytaj plik "S2-JTD.HTM", w ktorym
+staralem sie jak najdokladniej wszystko opisac, lacznie z problemami z u-
+ruchomieniem, opisem broni, opcji i wiecej. Szczegolnie przeczytaj ten
+plik, jesli cos Ci nie dziala, zanim zaczniesz do mnie pisac z pytaniami
+na ten temat. 
+ 
+Dostepne parametry z linii polecen przy uruchamianiu programu : 
+ /bezintro   - wylacza intro i szybciej uruchamia program 
+ /bezdzwieku - calkowicie wylacza obsluge karty muzycznej 
+ 
+Jesli znajdziesz jakies bledy, bede bardzo wdzieczny za ich opisanie i do-
+kladne napisanie w jakiej sytuacji wystapily. Wszystkie bledy bede sie
+staral poprawiac. Z gory wielkie dzieki! 
+
+     ---------------------
+----| WYMAGANIA SPRZETOWE |
+     ---------------------
+
+* Procesor Pentium 100MHz (zalecane Pentium150 lub wiecej!)
+* Karta graficzna VGA 256 kolorow
+* Karta muzyczna zgodna z Sound Blaster
+* Myszka
+* Wolnej pamieci podstawej min.ok.500 KB [zalecane nawet >600KB]
+* 8 MB pamieci XMS
+* >3 MB HDD
+
+     -------
+----| PLIKI |
+     -------
+
+ sadist2.exe - plik uruchomieniowy                                        
+ sadist2.cfg - plik z konfiguracja (mozna go skasowac,aby przywrocic usta-
+               wienia standardowe)                                        
+s2detale.cfg - plik z zapisanymi ustawieniami detali (rowniez mozna kaso- 
+               wac, jak powyzej)                                          
+   s2rek.cfg - plik z zapisana lista rekordow (takze mozna kasowac, jak   
+               powyzej)                                                   
+ sadist2.txt - plik,ktory wlasnie czytasz                                 
+historia.txt - spis poprawek i dodatkow w kolejnych wersjach programu     
+  sadist.ico - ikona programu dla Windows 95/98/NT                        
+  s2-jtd.htm - plik HTML z opisem programu                                
+       DANE\ - podkatalog z danymi programu                               
+    POSTACI\ - podkatalog z zestawami postaci                             
+   TEKSTURY\ - podkatalog z teksturami i wierzchami terenu                
+     TERENY\ - podkatalog z zapisanymi terenami                           
+        TLA\ - podkatalog z rysunkami tla                                 
+     ZRZUTY\ - podkatalog z zapisanymi zrzutami ekranu                    
+                                                                          
+Dokladny opis plikow znajduje sie w pliku S2-JTD.HTM.                     
+
+     -------------------
+----| HISTORIA PROGRAMU |
+     -------------------
+
+Historia znajduje sie w pliku HISTORIA.TXT
+
+     --------------
+----| ZASTRZEZENIA |
+     --------------
+
+Ten program jest tzw. FREEWARE, czyli moze byc kopiowany i rozdawany za darmo.
+Nie moze byc w zaden sposob sprzedawany. Zezwalam na umieszczanie go na dys-
+kietkach lub plytach CD shareware, wowczas oplata za niego pobrana moze byc
+jedynie za koszt nosnika. Programu nie mozna modyfikowac i rozprowadzac zmie-
+nionego lub bez ktoregos z plikow. Zastrzegam sobie tez pomysl na program,
+ktory nie moze byc powielany w zaden sposob bez mojego zezwolenia!
+
+Sadist (c)1999 & Sadist II (c)2000/2001
+Studio Komputerowe GAD [https://gadz.pl/]
+
+     -----------
+----| COPYRIGHT |
+     -----------
+
+Studio Komputerowe GAD (c)2001
+
+Grzegorz "GAD" Drozd
+www:    https://gadz.pl/

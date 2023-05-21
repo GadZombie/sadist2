@@ -1,0 +1,202 @@
+Sadist II: Ostatni krzyk (c)2000/2001 S.K.GAD gad@gad.art.pl http://gad.art.pl/
+Historia programu.
+
+-wersja 1.07--  .  .2001--------------------------------------------------------
+
+* Mala poprawka z lista postaci. Przy ich wiekszej ilosci, pojawialy sie "smie-
+  ci" na ekranie.
+* Zmieniony plik SADIST2.TXT
+
+-wersja 1.06-- 5.08.2001--------------------------------------------------------
+
+* Poprzednia wersja wprowadzila nowy blad przy skakaniu postacia. Blad poprawio-
+  ny.
+
+-wersja 1.05--3.07.2001---------------------------------------------------------
+
+* Mala poprawka z lupa. Kiedy bylo malo wolnej pamieci, to po jej wlaczeniu pro-
+  gram sie wysypywal.
+* Zlapane postaci lub paczki, przesuniete kursorem na sam dolekranu, juz nie
+  znikaja.
+* Dodane odrzucanie postaci przy strzelaniu (podczas sterowania nimi).
+* Poprawiony wyglad krwi - widac to najlepiej, kiedy w detalach bedzie ustawio-
+  ne duzo partiklow!
+* Dodana opcja ustawiania ilosci krwi i wlaczania fontanny krwi.
+* Cale menu glowne jest od teraz w postaci ikon, a nie napisow, jak dotychczas.
+* Zmienione logo Sadist, ktore od teraz ma stac sie jego wyraznym logiem, koja-
+  rzacym sie z programem :).
+* Nowa bron: miotacz odlamkow.
+* Dodane zlosliwe komentarze ;).
+* Nowa niespodzianka w paczkach - konfetti ;-).
+* Opcja niesmiertelnosci postaci.
+* Poprawione ustawienia w programie.
+* Postaci wreszcie mozna zamurowywac w scianach.
+* Poprawiony celownik [mysz].
+* Dodana opcja ustawiania sily karabinu, minigana i strzelby.
+* Miny moga byc tez zepsute [nie wybuchaja]!
+* Sterowana postacia mozna tez chodzic (nie biegac) trzymajac klawisz 'V'.
+* Miotacz ognia moze tez lac napalmem
+* Historia (ten plik) zamieniona z ciaglego tekstu na punkty
+* Mozliwosc rzucania dowolnymi paczkami (menu: inne atrakcje) oraz wylaczania
+  wybranych rodzajow spadajacych paczek
+
+-wersja 1.04-- 7.03.2001--------------------------------------------------------
+
+* Poprawione skrinszoty do bitmapy - teraz lapia takze wode/lawe/kwas.
+* Mozna rysowac teraz tez gladkim kolorem.
+* Poprawione lanie krwia.
+* Dodana opcja chowania kursora myszy (klawisz F3).
+* Bronie z poszczegolnych menu sa teraz zapamietywane oddzielnie i wystarczy
+  zmienic menu, a bron zmieni sie na ostatnio uzywana z tego menu [opcjonalnie].
+* Dodane zakladki w menu na dole.
+* Po menu z zapisem/odczytem mozna sie poruszac tez klawiatura.
+* Zwiekszone maximum niektorych z detali.
+* Nowa niespodzianka w paczkach - mega bum :).
+* Poprawione cale menu do rysowania.
+* W koncu poprawiony i ulepszony snieg - uklada sie juz dobrze, pruszy, a nie
+  spada jak deszcz i robi fajne zaspy przy wietrze :).
+* Pioruny sa nieco jasniejsze.
+* Paczki mozna tez przenosic shiftem - jak postaci.
+* Postaci bawiace sie akurat jakas rzecza, wolniej reaguja na spadajce kowadlo/
+  paczke - bo sa zainteresowane czyms innym :).
+* Opcja szybkosci przesuwania ekranu mysza i klawiatura [oddzielnie].
+* Troche zmienione intro.
+* Poprawiony maly blad z zapisywaniem i wczytywaniem terenu.
+* Minimalnie zmieniony format plikow z terenem. Bedzie niezbedna konwersja sta-
+  rych terenow na nowe! Konwerter dostepny na stronie, w dziale Download.
+* Nie ma jak optymalizacja - udalo mi sie odzyskac troche pamieci konwencjonal-
+  nej, ktora mozesz teraz przeznaczyc na detale! :)
+* Paczki czasem inaczej wygladaja :>.
+* Ptaszki maja czasem cos do zrobienia ;-).
+* Nowa bron!: napalm.
+* Ustawienia detali dzialaja teraz na suwakach, wiec sa wygodniejsze w uzyciu.
+* Kilka mniejszych poprawek w kodzie.
+
+-wersja 1.03-- 7.02.2001--------------------------------------------------------
+
+* Prawdopodobnie znalazlem i poprawilem najwieksza udreke tego programu. Mam
+  wielka nadzieje, ze juz sie nie pojawi, chociaz nie mam 100% pewnosci, ze mi
+  sie udalo.
+* Poprawiony miotacz ognia - ma teraz wiekszy zasieg.
+* Dodana opcja gry dla mlodszych - bez krwi i miesa.
+* Nowy sposob grania - gra na czas, z liczona amunicja i ograniczonymi opcjami;
+  w nagrode niezla premia. Oczywiscie stary styl zostal takze.
+* Dodana odrobina losowosci przy rozmiarze wybuchu min.
+* Zwiekszone prawdopodobienstwo oderwania konczyny lub glowy u postaci :).
+* Poprawiona efektownosc wybuchow oraz ognia z miotacza.
+* Dodany dzwiek przy wyjsciu z programu.
+* Paczki moga sie teraz pokazywac tez pod ziemia [opcjonalnie] - poszukiwanie
+  skarbow :).
+* Odwrocona kolejnosc zapisywania historii [tego pliku], zeby najnowsze bylo za-
+  wsze u gory.
+* Zmieniony unit do myszki w programie i dodana opcja ustawiania jej czulosci.
+* Poprawiona snajperka - czasem mozna ustrzelic konkretnie wymierzona czesc cia-
+  la :).
+* Mozna teraz topic postaci trzymane myszka.
+* Postaci traca sile przy uderzeniu w powierzchnie wody.
+* Zwiekszona ilosc sniegu/deszczu z kursora.
+* Kilka mniejszych bledow poprawionych.
+* Oficjalna Strona Sadist zostala przeniesiona pod adres:
+  http://www.sadist.qs.pl/
+
+-wersja 1.02--29.12.2000--------------------------------------------------------
+
+* Nalot jest teraz z wiekszym rozrzutem i odrobina losowosci. Wyglada chyba le-
+  piej :).
+* Poprawiony blad z ciaglymi dzwiekami, ktory powstal dopiero w wersji 1.01.
+* Dodany podpis rejlgana w menu
+* Mozliwosc sterowania celownikiem z klawiatury [home/end/delete/page down].
+* Poprawiony blad ze znikajacymi pociskami, granatami itd w wodzie.
+* Rejlgan robi juz dziury w ziemi.
+* Zaznaczanie prawym klawiszem myszy zamienione na + i - z klawiatury, gdyz ro-
+  bilo problemy podczas trzymania postaci itp.
+
+-wersja 1.01--27.12.2000--------------------------------------------------------
+
+* Oczywiscie pierwsze poprawki musialy nastapic szybko :). Teraz program mozna
+  uruchomic z parametrem "-BEZDZWIEKU" w celu wylaczenia karty muzycznej. Czasem
+  moze to byc niezbedne, kiedy karty nie ma, badz nie moze zostac wykryta przez
+  program.
+* Poprawiony blad przy wiekszym braku pamieci konwencjonalnej, kiedy program
+  zapetlal sie przy uruchomieniu.
+* Postaci mozna tez zaznaczac i odznaczac prawym klawiszem myszy.
+* Wciaz nie znaleziony problem bledu RE207 :((.
+
+-wersja 1.0--24.12.2000---------------------------------------------------------
+
+* Pierwsza pelna wersja!
+* Dodana bron - rejlgan i luski.
+* Poprawione kilka bledow.
+* Dokladnie dwa lata bez jednego dnia po premierze Sadist pojawia sie Sadist II!
+  To na prawde wspaniale uczucie skonczyc robote! :) Z okazji sfiont specjalnie
+  dla Was wystawiam na strone wersje 1.0 "Sadist II: Ostatni krzyk" !! Po niemal
+  pol roku roboty i waszego cierpliwego [albo i nie;)] czekania, w koncu stwier-
+  dzilem, ze pora, aby Sadist II opuscil moj zakatek i ruszyl na podboj swiata!
+  Mysle, ze jest to dla wszystkich niezly prezent. Wiem, ze pozostal wciaz taje-
+  mniczy blad z RE207, ale wystepuje dosc rzadko. Postaram sie w koncu go zna-
+  lezc i miejmy nadzieje, ze niedlugo wyjdzie wersja 1.01 z tym poprawionym ble-
+  dem :).
+
+-wersja 0.09--17.12.2000--------------------------------------------------------
+
+* Najgorsze za mna! W koncu udalo mi sie zmodyfikowac unit do dzwiekow i dzieki
+  temu udzwiekowilem postaci. Teraz czeka jeszcze robota z nagrywaniem dzwiekow.
+  SMIX jednak zostaje :).
+* Wciaz jest jeszcze jakis blad w kodzie i czasem wyskakuje RE207 z niewiadomych
+  przyczyn. Mam nadzieje, ze to znajde, bo grudzien sie konczy, a chce przed
+  jego koncem umiescic Sadist 2 na stronie!
+
+-wersja 0.08--6.12.2000---------------------------------------------------------
+
+* Kolejne kilka poprawek
+* Dodane punkty i lista najlepszych
+* Wreszcie poprawiony zestaw postaci Ufoki.
+
+-wersja 0.07--29.11.2000--------------------------------------------------------
+
+* Zblizamy sie do konca! Wiekszosc juz dziala i jest poprawione wiele bledow.
+* Trwaja przygotowania do zmiany unita do dzwiekow, niestety chyba bedzie trzeba
+  zrezygnowac z SMIX.
+
+-wersja 0.06--17.11.2000--------------------------------------------------------
+
+* Znow pare bledow poprawionych.
+* Dodane piranie i dwa nowe brzegi terenu.
+
+-wersja 0.05--12.11.2000--------------------------------------------------------
+
+* Sporo poprawionych bledow, wiekszosc juz dziala.
+* Wciaz pozostaje tajemniczy blad znikajacej jaszczurki w intro [?].
+* Dodany nowy zestaw postaci 'zolnierze'.
+
+-wersja 0.04--29.10.2000--------------------------------------------------------
+
+* Wreszcie mozna doczytywac postaci.
+* Zrobione pierwsze cztery testowe zestawy: roboty, ludzie, alieny i buszmeni
+* Dziala juz woda etc.
+* Wciaz pozostaje kilka bledow.
+* Jeszcze nie zrobione sople; prawdopodobnie ich nie bedzie.
+
+-wersja 0.03--11.10.2000--------------------------------------------------------
+
+* Juz calkiem zaawansowana wersja.
+* Sa tekstury, dobrze dziala menu.
+* Jeszcze nie da sie wczytywac innych postaci.
+* Program podzielony juz na podkatalogi.
+* Nie ma jeszcze wody/lawy/kwasu.
+
+-wersja 0.02--26.08.2000--------------------------------------------------------
+
+* Druga wersja, juz znacznie lepsza.
+* Jest juz menu, kilka broni, deszcz, snieg itp.
+* Sa pierwsze dzwieki i intro.
+* Wciaz nie ma tekstur etc.
+
+-wersja 0.01--10.08.2000--------------------------------------------------------
+
+* Piersza wersja, ktora opuscila moj komputer :).
+* Brakuje jeszcze tekstur i wiele innych elementow
+* Prawie nie ma jeszcze dzwiekow [sa tylko 3]
+* Pierwszy zestaw postaci, jeszcze niedokonczony - "Ludzie"
+* Brakuje menu
+* Sa tylko trzy bronie

@@ -1,0 +1,10 @@
+Konwerter plikow S2T z wersji 1 na wersjê 2.
+
+Program konwertuje pliki S2T (tereny do Sadist II: Ostatni krzyk) z poprzedniego formatu pliku na nowy. Jeœli nigdy nie mia³eœ(aœ) starszej wersji programu Sadist 2 ni¿ 1.04, ten program prawdopodobnie nie bêdzie Ci potrzebny.
+Sposób u¿ycia:
+Skopiuj plik KONW_S2T.EXE do podkatalogu zawieraj¹cego tereny. Uruchom go i kieruj siê dalszymi wskazówkami. Jeœli wszystko pójdzie zgodnie z planem, wszystkie pliki *.S2T powinny zostaæ skonwertowane od razu. Podczas konwersji s¹ one trzymane w katalogu tymczasowym. Konwerter spyta na koniec, czy je przenieœæ spowrotem. Zalecam zgodzenie siê na pytanie. Jeœli tego nie zrobisz, poprzednie wersje plików S2T zostan¹ na swoim miejscu, a skonwertowane bêd¹ w podkatalogu tymczasowym, o tajemniczej nazwie, sk³adaj¹cej siê z przypadkowych liter :). Pliki S2T tylko do odczytu, nie zostan¹ skonwertowane!
+
+Sadist (c)1999 & Sadist II (c)2000/2001
+Studio Komputerowe GAD [http://gad.qs.pl/]
+(R)Nazwa Sadist, logo Sadist oraz pomys³ na program zastrze¿one!
+Oficjalna Strona Sadist: http://www.sadist.qs.pl/
