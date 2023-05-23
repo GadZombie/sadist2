@@ -1,4 +1,6 @@
-# Sadist
+# Sadist 2 - Ostatni krzyk 
+
+(eng. Sadist 2 - The Last Scream)
 
 Sadist 2 - An old classic DOS game from 2000. 
 The successor of Sadist.
