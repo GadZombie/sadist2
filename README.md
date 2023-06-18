@@ -11,7 +11,7 @@ Created by Grzegorz Drozd, long time ago...
 
 # Website
 
-The 'Sadist 2' website is available at https://gadz.pl/opis.php?i=102
+The 'Sadist 2' website is available at https://gadz.pl/sadist-2
 You can download working game there, find some videos, screenshots, descriptions etc.
 
 A video gameplay is here: https://www.youtube.com/watch?v=MA6PZX7lKpY
