@@ -291,23 +291,30 @@ if blad=0 then begin
    blad:=ioresult;
    close(plik);
 
-   XMSFree(handlery[2+nr]);
-   XMSAllocate(handlery[2+nr], 0);
-   sharedsize[2+nr]:=0;
+   for a := 0 to 12 do
+       FreeSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+a]);
 
-   LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 0],'postaci\'+nazwa,'',dzww[ 0].os,dzww[ 0].r,2+nr);
-   LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 1],'postaci\'+nazwa,'',dzww[ 1].os,dzww[ 1].r,2+nr);
-   LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 2],'postaci\'+nazwa,'',dzww[ 2].os,dzww[ 2].r,2+nr);
-   LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 3],'postaci\'+nazwa,'',dzww[ 3].os,dzww[ 3].r,2+nr);
-   LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 4],'postaci\'+nazwa,'',dzww[ 4].os,dzww[ 4].r,2+nr);
-   LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 5],'postaci\'+nazwa,'',dzww[ 5].os,dzww[ 5].r,2+nr);
-   LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 6],'postaci\'+nazwa,'',dzww[ 6].os,dzww[ 6].r,2+nr);
-   LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 7],'postaci\'+nazwa,'',dzww[ 7].os,dzww[ 7].r,2+nr);
-   LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 8],'postaci\'+nazwa,'',dzww[ 8].os,dzww[ 8].r,2+nr);
-   LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 9],'postaci\'+nazwa,'',dzww[ 9].os,dzww[ 9].r,2+nr);
-   LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+10],'postaci\'+nazwa,'',dzww[10].os,dzww[10].r,2+nr);
-   LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+11],'postaci\'+nazwa,'',dzww[11].os,dzww[11].r,2+nr);
-   LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+12],'postaci\'+nazwa,'',dzww[12].os,dzww[12].r,2+nr);
+   if handlery[2+nr] <> 0 then
+      XMSFree(handlery[2+nr]);
+   if not XMSAllocate(handlery[2+nr], 1) then begin
+      blad := 1;
+      exit;
+   end;
+   sharedsize[2+nr] := 0;
+
+   if not LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 0],'postaci\'+nazwa,'',dzww[ 0].os,dzww[ 0].r,2+nr) then blad:=1;
+   if not LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 1],'postaci\'+nazwa,'',dzww[ 1].os,dzww[ 1].r,2+nr) then blad:=1;
+   if not LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 2],'postaci\'+nazwa,'',dzww[ 2].os,dzww[ 2].r,2+nr) then blad:=1;
+   if not LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 3],'postaci\'+nazwa,'',dzww[ 3].os,dzww[ 3].r,2+nr) then blad:=1;
+   if not LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 4],'postaci\'+nazwa,'',dzww[ 4].os,dzww[ 4].r,2+nr) then blad:=1;
+   if not LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 5],'postaci\'+nazwa,'',dzww[ 5].os,dzww[ 5].r,2+nr) then blad:=1;
+   if not LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 6],'postaci\'+nazwa,'',dzww[ 6].os,dzww[ 6].r,2+nr) then blad:=1;
+   if not LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 7],'postaci\'+nazwa,'',dzww[ 7].os,dzww[ 7].r,2+nr) then blad:=1;
+   if not LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 8],'postaci\'+nazwa,'',dzww[ 8].os,dzww[ 8].r,2+nr) then blad:=1;
+   if not LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+ 9],'postaci\'+nazwa,'',dzww[ 9].os,dzww[ 9].r,2+nr) then blad:=1;
+   if not LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+10],'postaci\'+nazwa,'',dzww[10].os,dzww[10].r,2+nr) then blad:=1;
+   if not LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+11],'postaci\'+nazwa,'',dzww[11].os,dzww[11].r,2+nr) then blad:=1;
+   if not LoadSound(Sound[dzwiekipodstawowe+dzwiekowgrupy*nr+12],'postaci\'+nazwa,'',dzww[12].os,dzww[12].r,2+nr) then blad:=1;
 end;
 {$I+} a:=ioresult; {$I-}
 end;

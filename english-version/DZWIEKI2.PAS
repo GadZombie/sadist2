@@ -17,13 +17,22 @@ var
 implementation
 uses crt;
 const
-   XMSRequired   = 2000;    {XMS memory required to load the sounds (KBytes) }
+   {dzwieki podst. ~1410 KB + grafika XMS 5000 KB + zapas na postaci}
+   XMSRequired   = 8500;
    SharedEMB     = true;
       {TRUE:   All sounds will be stored in a shared EMB}
       {FALSE:  Each sound will be stored in a separate EMB}
 var
    BaseIO: word; IRQ, DMA, DMA16: byte;
    OldExitProc: pointer;
+
+{*}PROCEDURE LoadBaseSound(n: integer; nazwa: string);
+begin
+if not LoadSound(Sound[n], 'dane\s2.dat', nazwa, 0, 0, 1) then begin
+   writeln('Error loading sound file: ', nazwa);
+   Halt(5);
+end;
+end;
 
 {*}PROCEDURE Init;
 begin

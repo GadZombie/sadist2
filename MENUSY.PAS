@@ -37,7 +37,7 @@ begin
 textbackground(0);textcolor(7);
 clrscr;
 textbackground(4);textcolor(15);
-writeln(' Sadist II: Ostatni krzyk  ver.1.07                        (c)2000/2001 S.K.GAD ');
+writeln(' Sadist II: Ostatni krzyk  ver.1.10.pl                     (c)2000-2026 gadz.pl ');
 textbackground(0);textcolor(7);
 end;
 

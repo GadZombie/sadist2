@@ -1,5 +1,4 @@
-{a
-gry:
+{gry:
  -ludzkie rzutki
  -chodzenie kolesiem i przebywanie drogi
 -------------------

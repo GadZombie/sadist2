@@ -37,7 +37,7 @@ begin
 textbackground(0);textcolor(7);
 clrscr;
 textbackground(4);textcolor(15);
-writeln(' Sadist II: Final Scream  ver.1.07 ENGLISH                (c)2000/2001 S.K.GAD ');
+writeln(' Sadist II: Final Scream  ver.1.10.en                     (c)2000-2026 gadz.pl ');
 textbackground(0);textcolor(7);
 end;
 
@@ -208,7 +208,10 @@ if jestkartamuzyczna then begin
    writeln('Loading sounds')
 end;
 LoadSounds;
-XMSAllocate(_xms[1].h,5000);
+if not XMSAllocate(_xms[1].h,5000) then begin
+   writeln('Allocation XMS memory for graphics error (5000k)');
+   Halt(5);
+end;
 
 sprawdz_katalogi;
 randomize;

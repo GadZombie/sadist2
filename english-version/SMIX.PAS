@@ -409,12 +409,18 @@ Port[DMAMaskPort] := DMAStopMask;
 end;
 
 
+const
+   MinXMSBlockKB = 1;  {HIMEM nie alokuje blokow 0 KB; 1 KB na kazdy handler}
+
 {*}PROCEDURE InitSharing;
 var a:byte;
 begin
 for a:=1 to ilehandlerow do begin
     SharedSize[a] := 0;
-    XMSAllocate(handlery[a], SharedSize[a]);
+    if not(XMSAllocate(handlery[a], MinXMSBlockKB)) then begin
+       writeln('Allocation XMS memory for sound error (handler ', a, ')');
+       Halt(5);
+    end;
 end;
 end;
 
@@ -422,7 +428,10 @@ end;
 var a:byte;
 begin
 for a:=1 to ilehandlerow do
-    XMSFree(handlery[a]);
+    if handlery[a] <> 0 then begin
+       XMSFree(handlery[a]);
+       handlery[a] := 0;
+    end;
 end;
 
 
@@ -438,6 +447,9 @@ var
 Size: LongInt;
 InBuffer: array[1..LoadChunkSize] of byte;
 Remaining: LongInt;
+ReadLen: LongInt;
+SoundStartOfs: LongInt;
+NewSharedSize: LongInt;
 MoveParams: TMoveParams;
 begin
 LoadSound := false;
@@ -445,6 +457,8 @@ if not jestkartamuzyczna then begin
    LoadSound := true;
    exit;
 end;
+
+if (handl < 1) or (handl > ilehandlerow) then exit;
 
 if key<>'' then begin {z dat pliku}
    DATassign(SoundFile, dplik,key,0);
@@ -456,12 +470,25 @@ end else begin {z innego pliku}
    SoundSize:=rozmiar;
 end;
 
+if SoundSize <= 0 then begin
+   Close(SoundFile);
+   exit;
+end;
+
+SoundStartOfs := SharedSize[handl];
+NewSharedSize := SharedSize[handl] + SoundSize;
+if not(XMSReallocate(handlery[handl], (NewSharedSize + 1023) div 1024)) then begin
+   Close(SoundFile);
+   exit;
+end;
+
+if Sound <> nil then FreeSound(Sound);
+
 New(Sound);
 Sound^.SoundSize := SoundSize;
-Sound^.StartOfs := SharedSize[handl];
+Sound^.StartOfs := SoundStartOfs;
 Sound^.XMSHandle := handlery[handl];
-SharedSize[handl] := SharedSize[handl] + SoundSize;
-if not(XMSReallocate(handlery[handl], (SharedSize[handl] + 1023) div 1024)) then exit;
+SharedSize[handl] := NewSharedSize;
 
 MoveParams.SourceHandle := 0;
 MoveParams.SourceOffset := LongInt(Addr(InBuffer));
@@ -471,13 +498,14 @@ MoveParams.DestOffset   := Sound^.StartOfs;
 Remaining := Sound^.SoundSize;
 
 repeat
-   MoveParams.Length := Min(Remaining, LoadChunkSize);
-   BlockRead(SoundFile, InBuffer, MoveParams.Length);
-   MoveParams.Length := ((MoveParams.Length+1) div 2) * 2;
+   ReadLen := Min(Remaining, LoadChunkSize);
+   BlockRead(SoundFile, InBuffer, ReadLen);
+   MoveParams.Length := ReadLen;
+   if MoveParams.Length and 1 = 1 then Inc(MoveParams.Length);
    XMSMove(@MoveParams); {XMS copy lengths must be a multiple of two}
    Inc(MoveParams.DestOffset, MoveParams.Length);
-   Dec(Remaining, MoveParams.Length);
-until not(Remaining > 0);
+   Dec(Remaining, ReadLen);
+until Remaining <= 0;
 
 Close(SoundFile);
 LoadSound := true;
@@ -485,8 +513,10 @@ end;
 
 {*}PROCEDURE FreeSound(var Sound: PSound);
 begin
-Dispose(Sound);
-Sound := nil;
+if Sound <> nil then begin
+   Dispose(Sound);
+   Sound := nil;
+end;
 end;
 
 {*}PROCEDURE DeallocateVoice(VoiceNum: byte);
