@@ -311,7 +311,6 @@ asm
   int 10h
 end;
 writeln('Snieg z rzeczywistym wiatrem (c) 2001 GAD');
-writeln('eml:gad@gad.art.pl');
-writeln('http://gad.art.pl/');
+writeln('https://gadz.pl/');
 while keypressed do readkey;
 end.

@@ -82,7 +82,7 @@ end else begin
   writeln('Pamiec XMS dziala poprawnie');
   write('Wolnej pamieci XMS: ', xmsGetFreemem, 'k - ');
   if xmsGetFreemem<XMSRequired then begin
-     writeln('wrak pamieci XMS');
+     writeln('brak pamieci XMS');
      Halt(4); {Insufficient XMS memory}
   end else begin
    writeln('wczytywanie dzwiekow');

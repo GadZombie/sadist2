@@ -388,7 +388,7 @@ dispose(chmur);
 dispose(negatyw);
 {$I+}
 a:=ioresult;
-writeln('Remember: this program is freeware; if someone sold it to you, you may rip out their liver :>.'#13#10#10,
+writeln('Remember: this game is freeware; if someone sold it to you, you may rip out their liver :>.'#13#10#10,
         'Before emailing me questions, please read file'#13#10,
         '"S2-JTD.htm" !!! You will find many answers there.');
 end;
@@ -870,8 +870,8 @@ begin
      pisz(7, 110,'HUMAN CHARACTER VOICES  TOMASZ "XAN" SANECKI',0);
      pisz(7, 120,'CHARACTER EDITOR        TOMASZ "XAN" SANECKI',0);
 
-     pisz(83 ,140,'GADZ.PL',0);
-     pisz(97 ,150,'HTTPS://GADZ.PL/',0);
+     piszc(160 ,140,'GADZ.PL',0);
+     piszc(160 ,150,'HTTPS://GADZ.PL/SADIST-2',0);
 end;
 
 {*}PROCEDURE menu;
@@ -1119,7 +1119,7 @@ tip:string[70];
  var
  ww,wr:word;
  begin
-     pisz(5,5,'PROGRAM SETTINGS (2/3)',96);
+     pisz(5,5,'GAME SETTINGS (2/3)',96);
      guztextw(15,20,'SMOKE/EXPLOSIONS',kfg.dym_wyb,120,184,7,0,2,true);
      guztextw(15,30,'PRECIPITATION',kfg.opady,120,184,7,0,3,true);
      guztextw(15,40,'PARTICLES (ROCKS, BLOOD, ETC)',kfg.syfki,120,184,7,0,4,true);
@@ -1360,7 +1360,7 @@ repeat
      end else
      if mysz_w(207,142,249,172) then begin
         wybr:=8;
-        tip:='PROGRAM CREDITS'
+        tip:='GAME CREDITS'
      end else
      if mysz_w(136,162,180,194) then begin
         wybr:=90;
@@ -1475,7 +1475,7 @@ repeat
      if (kl[1]) and (not klw[1]) then begin _wroc:=true;klw[1]:=true;end;
      end;
    1:begin {ustawienia programu 1/3}
-     pisz(5,5,'PROGRAM SETTINGS (1/3)',96);
+     pisz(5,5,'GAME SETTINGS (1/3)',96);
 
      pokaz_ustawienia1;
 
@@ -1544,7 +1544,7 @@ repeat
      if (kl[1]) and (not klw[1]) then begin ktore:=0;klw[1]:=true;end;
      end;
  102:begin {ustawienia programu 3/3}
-     pisz(5,5,'PROGRAM SETTINGS (3/3)',96);
+     pisz(5,5,'GAME SETTINGS (3/3)',96);
      guztextw(15,20,'LABELS, COMMENTS',kfg.komentarze,120,184,7,0,6,true);
      guztext(15,30,'LABEL POSITION: '+goradol[kfg.gdziepodpisy],7,0,1,kfg.komentarze);
      guztextw(15,40,'BODY COUNTERS',kfg.liczniki,120,184,7,0,17,true);
@@ -1616,7 +1616,7 @@ repeat
    3:begin {autorzy}
      if random(50)=0 then b:=random(16);
      menu_pokaz_liste_autorow;
-     pisz(66,130,'! THIS PROGRAM IS FREEWARE !',b*8);
+     pisz(66,130,'! THIS GAME IS FREEWARE !',b*8);
 
      guzobr(195,180,50,2,98,true);
      guzobr(255,180,50,1,97,true);
@@ -1629,7 +1629,7 @@ repeat
      if random(50)=0 then b:=random(16);
      pisz(5,5,'SADIST II: FINAL SCREAM - CREDITS (2/2)',96);
 
-     pisz(7,20,'USED IN THIS PROGRAM:',0);
+     pisz(7,20,'USED IN THIS SOFTWARE:',0);
      pisz(7,30,'COSIN                                 BINBOY',0);
      pisz(189,38,'BINBOY@FREE.COM.PL',0);
      pisz(7,48,'SMIX                           ETHAN BRODSKY',0);

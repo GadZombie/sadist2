@@ -367,9 +367,7 @@ end;
 begin
 trybtext;
 Sadist_OS;
-writeln('Studio Komputerowe GAD: http://gad.art.pl/ email:gad@gad.art.pl'#13#10,
-        'Oficjalna Strona Sadist: http://sadist.art.pl/ znajduje sie na serwerze'#13#10,
-        'QuadroSoft: http://komputron.pl/ .'#13#10);
+writeln('GADZ.PL: https://gadz.pl/'#13#10);
 
 wczytaj_rekordy;
 ustaw_rekordy(0);
@@ -872,10 +870,8 @@ begin
      pisz(7,110,'GlOSY POSTACI - LUDZI   TOMASZ "XAN" SANECKI',0);
      pisz(7,120,'EDYTOR POSTACI          TOMASZ "XAN" SANECKI',0);
 
-     pisz(83 ,140,'STUDIO KOMPUTEROWE GAD',0);
-     pisz(97 ,150,'HTTP://GAD.ART.PL/',0);
-     pisz(87 ,160,'HTTP://SADIST.ART.PL/',0);
-     pisz(111,170,'GAD@GAD.ART.PL',0);
+     piszc(160 ,140,'GADZ.PL',0);
+     piszc(160 ,150,'HTTPS://GADZ.PL/SADIST-2',0);
 end;
 
 {*}PROCEDURE menu;

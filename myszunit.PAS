@@ -3,8 +3,7 @@ unit myszunit;
 {
  Unit do obslugi myszy w Turbo/Borland Pascal'u.
  Autor: Grzegorz "GAD" Drozd
- gad@gad.art.pl
- http://gad.art.pl/
+ https://gadz.pl/
 
 }
 

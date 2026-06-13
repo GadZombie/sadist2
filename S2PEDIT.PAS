@@ -317,7 +317,7 @@ end;
 {*}PROCEDURE naglowekmenu(tekst:string);
 begin
 textcolor(15);textbackground(4);
-writeln('S2P Edit (c)GAD 2001  http://gad.art.pl/ http://www.sadist.qs.pl/ gad@gad.art.pl');
+writeln('S2P Edit (c)GAD 2001  https://gadz.pl/');
 
 textbackground(0);
 write(' ');

@@ -120,23 +120,23 @@ for y:=0 to 14 do
     for x:=0 to 14 do begin
         gotoxy(4+x*2,7+y);
         textcolor(kolory[pobr^[nr,y,x]]);
-        write('ÛÛ');
+        write('Å°Å°');
     end;
 textcolor(7);
 for y:=1 to 14 do begin
-    gotoxy(3+y*2,6); write('ÄÄ');
-    gotoxy(3+y*2,22); write('ÄÄ');
+    gotoxy(3+y*2,6); write('Ã„Ã„');
+    gotoxy(3+y*2,22); write('Ã„Ã„');
 end;
 for y:=1 to 15 do begin
-    gotoxy(3,6+y); write('³');
-    gotoxy(34,6+y); write('³');
+    gotoxy(3,6+y); write('Å‚');
+    gotoxy(34,6+y); write('Å‚');
 end;
-gotoxy(3,6); write('Ú');
-gotoxy(3,22); write('ÀÄ');
-gotoxy(33,6); write('Ä¿');
-gotoxy(33,22); write('ÄÙ');
+gotoxy(3,6); write('Ãš');
+gotoxy(3,22); write('Å”Ã„');
+gotoxy(33,6); write('Ã„Å¼');
+gotoxy(33,22); write('Ã„Å®');
 
-gotoxy(4,6);write('[',nr,']Äanimacja:',nr div 8,'Äklatka:',nr mod 8);
+gotoxy(4,6);write('[',nr,']Ã„animacja:',nr div 8,'Ã„klatka:',nr mod 8);
 end;
 
 {*}PROCEDURE wczytaj_pobr(nazwa:string);
@@ -317,7 +317,7 @@ end;
 {*}PROCEDURE naglowekmenu(tekst:string);
 begin
 textcolor(15);textbackground(4);
-writeln('S2P Edit (c)GAD 2001  http://gad.art.pl/ http://www.sadist.qs.pl/ gad@gad.art.pl');
+writeln('S2P Edit (c)GAD 2001  https://gadz.pl/');
 
 textbackground(0);
 write(' ');
@@ -461,7 +461,7 @@ repeat
       textbackground(7);
    textcolor(kolory[pobr^[64+trunc(ktore/1.2)*8+klat, grupy[0].ranykrew[ktore,klat].y, grupy[0].ranykrew[ktore,klat].x]]);
    gotoxy(4+grupy[0].ranykrew[ktore,klat].x*2,7+grupy[0].ranykrew[ktore,klat].y);
-   write('±±');
+   write('Â±Â±');
    textbackground(0); textcolor(7);
 
    kll:=readkey;
@@ -525,7 +525,7 @@ repeat
       textbackground(7);
    textcolor(kolory[pobr^[88+grupy[0].bicie[ktore].klatka+ktore*8,grupy[0].bicie[ktore].y,grupy[0].bicie[ktore].x]]);
    gotoxy(4+grupy[0].bicie[ktore].x*2,7+grupy[0].bicie[ktore].y);
-   write('±±');
+   write('Â±Â±');
    textbackground(0); textcolor(7);
 
    kll:=readkey;
