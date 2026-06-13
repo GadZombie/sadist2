@@ -17,13 +17,22 @@ var
 implementation
 uses crt;
 const
-   XMSRequired   = 2000;    {XMS memory required to load the sounds (KBytes) }
+   {dzwieki podst. ~1410 KB + grafika XMS 5000 KB + zapas na postaci}
+   XMSRequired   = 8500;
    SharedEMB     = true;
       {TRUE:   All sounds will be stored in a shared EMB}
       {FALSE:  Each sound will be stored in a separate EMB}
 var
    BaseIO: word; IRQ, DMA, DMA16: byte;
    OldExitProc: pointer;
+
+{*}PROCEDURE LoadBaseSound(n: integer; nazwa: string);
+begin
+if not LoadSound(Sound[n], 'dane\s2.dat', nazwa, 0, 0, 1) then begin
+   writeln('Blad wczytywania dzwieku: ', nazwa);
+   Halt(5);
+end;
+end;
 
 {*}PROCEDURE Init;
 begin
@@ -79,57 +88,57 @@ end else begin
    writeln('wczytywanie dzwiekow');
    if SharedEMB then InitSharing;
 
-   LoadSound(Sound[0], 'dane\s2.dat','BUM1.raw',0,0,1);
-   LoadSound(Sound[1], 'dane\s2.dat','BUM2.raw',0,0,1);
-   LoadSound(Sound[2], 'dane\s2.dat','BUM3.raw',0,0,1);
-   LoadSound(Sound[3], 'dane\s2.dat','PILKAKOP.raw',0,0,1);
-   LoadSound(Sound[4], 'dane\s2.dat','CEGLA.raw',0,0,1);
-   LoadSound(Sound[5], 'dane\s2.dat','GRANATS.raw',0,0,1);
-   LoadSound(Sound[6], 'dane\s2.dat','SYKBOMB.raw',0,0,1);
-   LoadSound(Sound[7], 'dane\s2.dat','BAZUKA.raw',0,0,1);
-   LoadSound(Sound[8], 'dane\s2.dat','STRZELBA.raw',0,0,1);
-   LoadSound(Sound[9], 'dane\s2.dat','DZIALO1.raw',0,0,1);
-   LoadSound(Sound[10],'dane\s2.dat','DZIALO2.raw',0,0,1);
-   LoadSound(Sound[11],'dane\s2.dat','BURZA1.raw',0,0,1);
-   LoadSound(Sound[12],'dane\s2.dat','INTRO.raw',0,0,1);
-   LoadSound(Sound[13],'dane\s2.dat','POCHDNIA.raw',0,0,1);
-   LoadSound(Sound[14],'dane\s2.dat','OGIEN.raw',0,0,1);
-   LoadSound(Sound[15],'dane\s2.dat','SPALONY.raw',0,0,1);
-   LoadSound(Sound[16],'dane\s2.dat','MIOTACZ.raw',0,0,1);
-   LoadSound(Sound[17],'dane\s2.dat','DESZCZ.raw',0,0,1);
-   LoadSound(Sound[18],'dane\s2.dat','SNAJPER.raw',0,0,1);
-   LoadSound(Sound[19],'dane\s2.dat','NALOT.raw',0,0,1);
-   LoadSound(Sound[20],'dane\s2.dat','KOWADLO.raw',0,0,1);
-   LoadSound(Sound[21],'dane\s2.dat','LASER1.raw',0,0,1);
-   LoadSound(Sound[22],'dane\s2.dat','LASER2.raw',0,0,1);
-   LoadSound(Sound[23],'dane\s2.dat','PRAD.raw',0,0,1);
-   LoadSound(Sound[24],'dane\s2.dat','POSTAC.raw',0,0,1);
-   LoadSound(Sound[25],'dane\s2.dat','INTROW.raw',0,0,1);
-   LoadSound(Sound[26],'dane\s2.dat','GRANATS.raw',0,0,1); {niepotrzebne}
-   LoadSound(Sound[27],'dane\s2.dat','PLUM.raw',0,0,1);
-   LoadSound(Sound[28],'dane\s2.dat','PSSS1.raw',0,0,1);
-   LoadSound(Sound[29],'dane\s2.dat','PSSS2.raw',0,0,1);
-   LoadSound(Sound[30],'dane\s2.dat','SMIECH1.raw',0,0,1);
-   LoadSound(Sound[31],'dane\s2.dat','SMIECH2.raw',0,0,1);
-   LoadSound(Sound[32],'dane\s2.dat','SMIECH3.raw',0,0,1);
-   LoadSound(Sound[33],'dane\s2.dat','SMIECH4.raw',0,0,1);
-   LoadSound(Sound[34],'dane\s2.dat','SMIECH5.raw',0,0,1);
-   LoadSound(Sound[35],'dane\s2.dat','SMIECH6.raw',0,0,1);
-   LoadSound(Sound[36],'dane\s2.dat','SMIECH7.raw',0,0,1);
-   LoadSound(Sound[37],'dane\s2.dat','KULAOG.raw',0,0,1);
-   LoadSound(Sound[38],'dane\s2.dat','PILACZEK.raw',0,0,1);
-   LoadSound(Sound[39],'dane\s2.dat','PILAKLIK.raw',0,0,1);
-   LoadSound(Sound[40],'dane\s2.dat','PILAPOC.raw',0,0,1);
-   LoadSound(Sound[41],'dane\s2.dat','PILATNIE.raw',0,0,1);
-   LoadSound(Sound[42],'dane\s2.dat','MINAPIP.raw',0,0,1);
-   LoadSound(Sound[43],'dane\s2.dat','PACZROZW.raw',0,0,1);
-   LoadSound(Sound[44],'dane\s2.dat','PACZSPAD.raw',0,0,1);
-   LoadSound(Sound[45],'dane\s2.dat','BOMBAS.raw',0,0,1);
-   LoadSound(Sound[46],'dane\s2.dat','PTAK1.raw',0,0,1);
-   LoadSound(Sound[47],'dane\s2.dat','NETOPER.raw',0,0,1);
-   LoadSound(Sound[48],'dane\s2.dat','BOING.raw',0,0,1);
-   LoadSound(Sound[49],'dane\s2.dat','REJLGAN.raw',0,0,1);
-   LoadSound(Sound[50],'dane\s2.dat','BULBUL.raw',0,0,1);
+   LoadBaseSound(0, 'BUM1.raw');
+   LoadBaseSound(1, 'BUM2.raw');
+   LoadBaseSound(2, 'BUM3.raw');
+   LoadBaseSound(3, 'PILKAKOP.raw');
+   LoadBaseSound(4, 'CEGLA.raw');
+   LoadBaseSound(5, 'GRANATS.raw');
+   LoadBaseSound(6, 'SYKBOMB.raw');
+   LoadBaseSound(7, 'BAZUKA.raw');
+   LoadBaseSound(8, 'STRZELBA.raw');
+   LoadBaseSound(9, 'DZIALO1.raw');
+   LoadBaseSound(10,'DZIALO2.raw');
+   LoadBaseSound(11,'BURZA1.raw');
+   LoadBaseSound(12,'INTRO.raw');
+   LoadBaseSound(13,'POCHDNIA.raw');
+   LoadBaseSound(14,'OGIEN.raw');
+   LoadBaseSound(15,'SPALONY.raw');
+   LoadBaseSound(16,'MIOTACZ.raw');
+   LoadBaseSound(17,'DESZCZ.raw');
+   LoadBaseSound(18,'SNAJPER.raw');
+   LoadBaseSound(19,'NALOT.raw');
+   LoadBaseSound(20,'KOWADLO.raw');
+   LoadBaseSound(21,'LASER1.raw');
+   LoadBaseSound(22,'LASER2.raw');
+   LoadBaseSound(23,'PRAD.raw');
+   LoadBaseSound(24,'POSTAC.raw');
+   LoadBaseSound(25,'INTROW.raw');
+   LoadBaseSound(26,'GRANATS.raw'); {niepotrzebne}
+   LoadBaseSound(27,'PLUM.raw');
+   LoadBaseSound(28,'PSSS1.raw');
+   LoadBaseSound(29,'PSSS2.raw');
+   LoadBaseSound(30,'SMIECH1.raw');
+   LoadBaseSound(31,'SMIECH2.raw');
+   LoadBaseSound(32,'SMIECH3.raw');
+   LoadBaseSound(33,'SMIECH4.raw');
+   LoadBaseSound(34,'SMIECH5.raw');
+   LoadBaseSound(35,'SMIECH6.raw');
+   LoadBaseSound(36,'SMIECH7.raw');
+   LoadBaseSound(37,'KULAOG.raw');
+   LoadBaseSound(38,'PILACZEK.raw');
+   LoadBaseSound(39,'PILAKLIK.raw');
+   LoadBaseSound(40,'PILAPOC.raw');
+   LoadBaseSound(41,'PILATNIE.raw');
+   LoadBaseSound(42,'MINAPIP.raw');
+   LoadBaseSound(43,'PACZROZW.raw');
+   LoadBaseSound(44,'PACZSPAD.raw');
+   LoadBaseSound(45,'BOMBAS.raw');
+   LoadBaseSound(46,'PTAK1.raw');
+   LoadBaseSound(47,'NETOPER.raw');
+   LoadBaseSound(48,'BOING.raw');
+   LoadBaseSound(49,'REJLGAN.raw');
+   LoadBaseSound(50,'BULBUL.raw');
 
    OldExitProc := ExitProc;
    ExitProc := @OurExitProc;

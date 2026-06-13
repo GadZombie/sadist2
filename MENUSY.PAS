@@ -208,7 +208,10 @@ if jestkartamuzyczna then begin
    writeln('Wczytywanie dzwiekow')
 end;
 LoadSounds;
-XMSAllocate(_xms[1].h,5000);
+if not XMSAllocate(_xms[1].h,5000) then begin
+   writeln('Blad alokacji pamieci XMS na grafike (5000k)');
+   Halt(5);
+end;
 
 sprawdz_katalogi;
 randomize;

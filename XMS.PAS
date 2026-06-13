@@ -88,8 +88,15 @@ unit XMS;
         mov    ah, 09h
         mov    dx, Size
         call   XMSDriver
+        cmp    ax, 1
+        jne    @Fail
         les    di, Handle
         mov    es:[di], dx
+        mov    al, 1
+        jmp    @Done
+       @Fail:
+        xor    al, al
+       @Done:
       end;
 
 {컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴}
@@ -100,6 +107,13 @@ unit XMS;
         mov    bx, NewSize
         mov    dx, Handle
         call   XMSDriver
+        cmp    ax, 1
+        je     @Ok
+        xor    al, al
+        jmp    @Done
+       @Ok:
+        mov    al, 1
+       @Done:
       end;
 
 {컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴}
