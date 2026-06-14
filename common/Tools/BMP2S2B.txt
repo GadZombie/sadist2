@@ -1,0 +1,9 @@
+Konwerter BMP -> S2B
+
+Program konwertuje pliki BMP na t³a do Sadist II: Ostatni krzyk.
+Bitmapa, któr¹ chcesz zamieniæ na t³o do S2 musi byæ rozmiarów 640x300, w 48 kolorach, lecz zapisana w formacie 256-kolorowej. Te 48 kolorów jest zupe³nie dowolne. Jeœli wyst¹pi¹ jakieœ problemy przy konwersji, spróbuj zapisaæ t¹ bitmapê w jakimœ innym programie graficznym, gdy¿ niektóre programy zapisuj¹ nieco inaczej nag³ówek pliku. Ze sprawdzonych programów, dobrze zapisuje Picture Publisher 6.0 oraz ACDSee. Photoshop 5.0 zapisuje nieco inaczej i wychodz¹ b³êdy. Po poprawnym skonwertowaniu bitmapy, utworzony plik *.S2B przekopiuj do podkatalogu Sadist2\TLA.
+
+Sadist (c)1999 & Sadist II (c)2000 
+Studio Komputerowe GAD [http://gad.koti.com.pl/]
+(R)Nazwa Sadist, logo Sadist oraz pomys³ na program zastrze¿one!
+Oficjalna Strona Sadist: http://gad.koti.com.pl/sadist/

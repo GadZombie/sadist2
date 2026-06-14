@@ -1,1 +1,0 @@
-sadist2 bezintro bezdzwieku

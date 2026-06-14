@@ -1,0 +1,98 @@
+Plik S2.DAT :
+nazwa       ³    rozmiar³     offset
+bazuka  .raw³      5.023³      2.095
+boing   .raw³      9.497³      7.118
+bombas  .raw³      4.072³     16.615
+bulbul  .raw³     15.914³     20.687
+bum1    .raw³     13.268³     36.601
+bum2    .raw³     31.888³     49.869
+bum3    .raw³     34.710³     81.757
+burza1  .raw³     26.848³    116.467
+cegla   .raw³     12.620³    143.315
+deszcz  .raw³     29.641³    155.935
+dzialo1 .raw³      7.046³    185.576
+dzialo2 .raw³     11.214³    192.622
+granats .raw³      1.393³    203.836
+intro   .raw³    138.176³    205.229
+introw  .raw³     77.184³    343.405
+kowadlo .raw³      4.710³    420.589
+kulaog  .raw³     32.658³    425.299
+laser1  .raw³     21.632³    457.957
+laser2  .raw³     10.432³    479.589
+minapip .raw³        459³    490.021
+miotacz .raw³     16.669³    490.480
+nalot   .raw³     47.776³    507.149
+netoper .raw³     41.771³    554.925
+ogien   .raw³     58.240³    596.696
+paczrozw.raw³     21.174³    654.936
+paczspad.raw³      7.664³    676.110
+pilaczek.raw³     15.062³    683.774
+pilaklik.raw³     36.192³    698.836
+pilapoc .raw³     32.096³    735.028
+pilatnie.raw³      3.328³    767.124
+pilkakop.raw³      1.582³    770.452
+plum    .raw³     20.452³    772.034
+pochdnia.raw³     11.840³    792.486
+postac  .raw³      6.752³    804.326
+prad    .raw³     45.120³    811.078
+psss1   .raw³     32.640³    856.198
+psss2   .raw³     15.155³    888.838
+ptak1   .raw³     15.932³    903.993
+rejlgan .raw³     29.726³    919.925
+smiech1 .raw³     59.904³    949.651
+smiech2 .raw³     53.568³  1.009.555
+smiech3 .raw³     51.712³  1.063.123
+smiech4 .raw³     78.976³  1.114.835
+smiech5 .raw³     55.680³  1.193.811
+smiech6 .raw³     47.360³  1.249.491
+smiech7 .raw³     52.160³  1.296.851
+snajper .raw³      9.728³  1.349.011
+spalony .raw³     30.272³  1.358.739
+strzelba.raw³     16.783³  1.389.011
+sykbomb .raw³     18.749³  1.405.794
+negtab  .dat³        256³  1.424.543
+transtab.dat³     65.280³  1.424.799
+czekaj  .gdr³     57.448³  1.490.079
+menu1   .gdr³     13.576³  1.547.527
+menu2   .gdr³     13.576³  1.561.103
+menu3   .gdr³     13.576³  1.574.679
+menu4   .gdr³     13.576³  1.588.255
+menu5   .gdr³     13.576³  1.601.831
+menu6   .gdr³     13.576³  1.615.407
+tlo     .gdr³     64.776³  1.628.983
+winieta .gdr³     64.776³  1.693.759
+bonusy  .obr³      2.602³  1.758.535
+czekaj  .obr³      3.470³  1.761.137
+dym     .obr³      6.002³  1.764.607
+font    .obr³      1.442³  1.770.609
+fontn   .obr³      2.991³  1.772.051
+ikony   .obr³      7.427³  1.775.042
+ikony2  .obr³      4.082³  1.782.469
+ikony3  .obr³        527³  1.786.551
+innerzut.obr³        884³  1.787.078
+jaszczur.obr³     33.662³  1.787.962
+kowadlo .obr³        252³  1.821.624
+krople  .obr³        492³  1.821.876
+mina    .obr³        786³  1.822.368
+myszka  .obr³     11.468³  1.823.154
+obiekty .obr³      1.502³  1.834.622
+ogien1  .obr³      1.352³  1.836.124
+ogien2  .obr³        492³  1.837.476
+ogien3  .obr³        632³  1.837.968
+paczka  .obr³      1.002³  1.838.600
+pila    .obr³      2.420³  1.839.602
+pocisk1 .obr³        394³  1.842.022
+pocisk2 .obr³        394³  1.842.416
+pocisk3 .obr³        394³  1.842.810
+pocisk4 .obr³        394³  1.843.204
+ptaszki .obr³      1.031³  1.843.598
+pytajnik.obr³        233³  1.844.629
+wskaznik.obr³         52³  1.844.862
+wybuch  .obr³     72.002³  1.844.914
+x       .obr³         42³  1.916.916
+zaznaczo.obr³        127³  1.916.958
+jaszczur.pal³        768³  1.917.085
+paleta  .pal³        768³  1.917.853
+intronap.gdr³     13.460³  1.918.621
+menuglow.gdr³     64.008³  1.932.081
+guzmenu .obr³      8.642³  1.996.089
