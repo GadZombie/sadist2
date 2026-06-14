@@ -9,7 +9,7 @@ The successor to Sadist.
 
 Created by Grzegorz Drozd a long time ago...
 
-![Sadist 2 title](pic/title/en/s2_title_refreshed_en_wide.jpg "Sadist 2 title")
+![Sadist 2 title](img/title/en/s2_title_refreshed_en_wide.jpg "Sadist 2 title")
 
 # Introduction
 
@@ -58,7 +58,7 @@ Następca Sadista.
 
 Stworzona przez Grzegorza Drozda, dawno temu...
 
-![Sadist 2 title](pic/title/pl/s2_title_refreshed_pl_wide.jpg "Sadist 2 title")
+![Sadist 2 title](img/title/pl/s2_title_refreshed_pl_wide.jpg "Sadist 2 title")
 
 # Wstęp
 
